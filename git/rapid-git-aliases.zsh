@@ -1,5 +1,6 @@
 # Aliases for file operations.
-alias qs='rapid status'
+alias s='rapid status'
+
 alias qa='rapid stage'
 alias qn='rapid track'
 alias qap='rapid stage --patch'
