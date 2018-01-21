@@ -92,7 +92,6 @@ git log --graph \
         --color=always \
         --format='%C(auto)%h%d %s %C(black)%C(bold)%cr' |
   fzf --ansi \
-      --height=99% \
       --no-sort \
       --reverse \
       --tiebreak=index \
