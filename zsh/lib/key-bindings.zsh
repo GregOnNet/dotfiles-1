@@ -41,9 +41,11 @@ bindkey '^[[1~'   beginning-of-line                                       # Home
 bindkey '^[[4~'   end-of-line                                             # End, Cmd + right arrow
 [[ -n "$terminfo[kdch1]" ]] && bindkey $terminfo[kdch1] delete-char       # Del
 
-bindkey '^[[1;5D' backward-word        # Ctrl + left arrow, Option + left arrow
-bindkey '^[[1;5C' forward-word         # Ctrl + right arrow, Option + right arrow
-bindkey '^_'      backward-delete-word # Ctrl + Backspace
+bindkey '^[b' backward-word            # Ctrl + left arrow, Option + left arrow
+bindkey '^[f' forward-word             # Ctrl + right arrow, Option + right arrow
+bindkey '^A' beginning-of-line         # cmd + right
+bindkey '^E' end-of-line               # cmd + left
+bindkey '^_' backward-delete-word      # Ctrl + Backspace
 bindkey '^[[3;5~' delete-word          # Ctrl + Del
 bindkey '^[[3;2~' delete-word          # Shift + Del
 # I can type multiline command lines, and still be able to move the cursor up/down between the lines while editing.
