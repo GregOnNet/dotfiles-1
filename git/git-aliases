@@ -54,6 +54,7 @@
 	rc = rebase --continue
 	ra = rebase --abort
 	rs = rebase --skip
+	rmaster = checkout master && pull && checkout - && rebase master
 
 	# git diff.
 	d       = diff
